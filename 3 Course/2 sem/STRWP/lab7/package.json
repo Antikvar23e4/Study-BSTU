@@ -1,0 +1,12 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "main": "m07.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

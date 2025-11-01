@@ -1,0 +1,3 @@
+﻿  ServerU.cpp
+D:\University\2sem\RIS\1\ServerU\ServerU\ServerU.cpp(50,10): warning C4101: bfrom: неиспользованная локальная переменная
+  ServerU.vcxproj -> D:\University\2sem\RIS\1\ServerU\x64\Debug\ServerU.exe

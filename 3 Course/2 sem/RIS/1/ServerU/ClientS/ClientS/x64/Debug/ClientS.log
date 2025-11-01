@@ -1,0 +1,4 @@
+﻿  ClientS.cpp
+D:\University\1sem\ПСП\ServerU\ClientS\ClientS\ClientS.cpp(164,43): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\University\1sem\ПСП\ServerU\ClientS\ClientS\ClientS.cpp(127,40): warning C4101: ptr: неиспользованная локальная переменная
+  ClientS.vcxproj -> D:\University\1sem\ПСП\ServerU\ClientS\x64\Debug\ClientS.exe

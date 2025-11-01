@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отправка письма</title>
+  </head>
+  <body>
+    <h2>Отправка письма</h2>
+    <form action="/send" method="POST">
+      <label
+        >Отправитель (email):
+        <input type="email" name="sender" required /></label
+      ><br /><br />
+      <label
+        >Получатель (email):
+        <input type="email" name="receiver" required /></label
+      ><br /><br />
+      <label
+        >Сообщение:<br />
+        <textarea name="message" rows="5" cols="40" required></textarea></label
+      ><br /><br />
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>

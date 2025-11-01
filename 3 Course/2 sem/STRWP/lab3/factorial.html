@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <ul id="results"></ul>
+
+    <script>
+      const resultsList = document.getElementById("results");
+      const startTime = performance.now();
+
+      async function fetchFactorial(index, k) {
+        const response = await fetch(`/fact?k=${k}`);
+        const data = await response.json();
+        const elapsedTime = Math.round(performance.now() - startTime);
+        const resultText = `${index}. Результат ${data.k}! = ${data.fact} (${elapsedTime}ms)`;
+
+        const listItem = document.createElement("li");
+        listItem.textContent = resultText;
+        resultsList.appendChild(listItem);
+      }
+
+      async function fetchAll() {
+        for (let x = 1; x <= 20; x++) {
+          await fetchFactorial(x - 1, x);
+        }
+      }
+
+      fetchAll();
+    </script>
+  </body>
+</html>

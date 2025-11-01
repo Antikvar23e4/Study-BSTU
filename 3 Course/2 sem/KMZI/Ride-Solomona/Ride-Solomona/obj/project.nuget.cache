@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/L44hG8i0rc=",
+  "success": true,
+  "projectFilePath": "D:\\University\\2sem\\KMZI\\Лабораторные\\Ride-Solomona\\Ride-Solomona\\Ride-Solomona.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\reedsolomon\\1.2.1\\reedsolomon.1.2.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sth1123.reedsolomon\\2.1.0\\sth1123.reedsolomon.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

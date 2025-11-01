@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>ФИО студента:</h1>
+    <p id="name">Загрузка...</p>
+
+    <script>
+      fetch("/api/name")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("name").textContent = data))
+        .catch((error) => console.error("Ошибка загрузки:", error));
+    </script>
+  </body>
+</html>

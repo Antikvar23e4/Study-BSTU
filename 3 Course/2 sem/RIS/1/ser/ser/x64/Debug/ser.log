@@ -1,0 +1,3 @@
+﻿  ser.cpp
+D:\University\2sem\RIS\1\ser\ser\ser.cpp(142,47): warning C4244: =: преобразование "time_t" в "int", возможна потеря данных
+  ser.vcxproj -> D:\University\2sem\RIS\1\ser\x64\Debug\ser.exe

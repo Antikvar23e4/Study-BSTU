@@ -1,0 +1,5 @@
+D:\University\2sem\KMZI\Лабораторные\Ride-Solomona\Ride-Solomona\obj\Debug\net8.0\Ride-Solomona.csproj.AssemblyReference.cache
+D:\University\2sem\KMZI\Лабораторные\Ride-Solomona\Ride-Solomona\obj\Debug\net8.0\Ride-Solomona.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2sem\KMZI\Лабораторные\Ride-Solomona\Ride-Solomona\obj\Debug\net8.0\Ride-Solomona.AssemblyInfoInputs.cache
+D:\University\2sem\KMZI\Лабораторные\Ride-Solomona\Ride-Solomona\obj\Debug\net8.0\Ride-Solomona.AssemblyInfo.cs
+D:\University\2sem\KMZI\Лабораторные\Ride-Solomona\Ride-Solomona\obj\Debug\net8.0\Ride-Solomona.csproj.CoreCompileInputs.cache

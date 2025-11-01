@@ -1,0 +1,18 @@
+{
+  "name": "lab18",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7",
+    "tedious": "^18.6.1"
+  }
+}

@@ -1,0 +1,173 @@
+[2025-04-16 11:29:13.850] [INFO] [GO_CNTR] GO SQLite database connected: D:\University\2sem\RIS\4-6\CentralService\go.sqlite
+[2025-04-16 11:29:13.878] [INFO] [GO_CNTR] GO table structure verified/created.
+[2025-04-16 11:29:13.880] [INFO] [GO_CNTR] Populating T_SUB table with initial data...
+[2025-04-16 11:29:13.881] [INFO] [GO_CNTR] T_SUB populated.
+[2025-04-16 11:29:13.885] [INFO] [GO_CNTR] Populating T_IST table with initial data...
+[2025-04-16 11:29:13.886] [INFO] [GO_CNTR] T_IST populated.
+[2025-04-16 11:29:13.889] [INFO] [GO_CNTR] Will push data to TOs: T01REG, T02REG
+[2025-04-16 11:29:13.890] [INFO] [GO_CNTR] [GENERATION] Checking GO DB initial population...
+[2025-04-16 11:29:13.892] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.892] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.891] [INFO] [GO_CNTR] [GENERATION] Creating initial 20 records in GO DB...
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.894] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.894] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.895] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.896] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.897] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.897] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.898] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.898] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.898] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.898] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.893] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T01REG passed to createAndInsert.
+[2025-04-16 11:29:13.899] [INFO] [GO_CNTR] [GENERATION] Initial GO DB population complete.
+[2025-04-16 11:29:13.899] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.899] [INFO] [GO_CNTR] Central Service GO (GO_CNTR) with SQLite (Generator + PUSH to TO) started
+[2025-04-16 11:29:13.900] [INFO] [GO_CNTR] Starting push replication cycle every 10 sec.
+[2025-04-16 11:29:13.899] [INFO] [GO_CNTR] Address: http://localhost:3000
+[2025-04-16 11:29:13.900] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:29:13.901] [INFO] [T01REG] Checking for new data to push to T01REG (since 1970-01-01T00:00:00.000Z)
+[2025-04-16 11:29:13.900] [INFO] [GO_CNTR] Data generation into GO DB started (every 10 sec).
+[2025-04-16 11:29:13.902] [INFO] [T02REG] Checking for new data to push to T02REG (since 1970-01-01T00:00:00.000Z)
+[2025-04-16 11:29:13.902] [INFO] [T02REG] No new data to push to T02REG.
+[2025-04-16 11:29:13.895] [WARN] [GO_CNTR] [GENERATION] Invalid global objectIdNum: T02REG passed to createAndInsert.
+[2025-04-16 11:29:13.901] [INFO] [T01REG] No new data to push to T01REG.
+[2025-04-16 11:29:23.901] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:29:23.902] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:29:23.937] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:29:23.953] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:29:23.937] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:29:23.953] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:29:23.954] [INFO] [T01REG] Checking for new data to push to T01REG (since 1970-01-01T00:00:00.000Z)
+[2025-04-16 11:29:23.955] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:29:23.994] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:29:23.954] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:29:23.993] [INFO] [T02REG] Checking for new data to push to T02REG (since 1970-01-01T00:00:00.000Z)
+[2025-04-16 11:29:24.007] [ERROR] [T02REG] Failed to push data to T02REG: No response from T02REG (ECONNREFUSED).
+[2025-04-16 11:29:24.062] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:29:23.934Z
+[2025-04-16 11:29:24.063] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:29:33.908] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:29:33.944] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:29:33.945] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:29:33.961] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:29:33.909] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:29:33.962] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:29:33.962] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:29:33.962] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:29:23.934Z)
+[2025-04-16 11:29:33.963] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:29:33.965] [INFO] [T02REG] Checking for new data to push to T02REG (since 1970-01-01T00:00:00.000Z)
+[2025-04-16 11:29:33.965] [REPLICA] [T02REG] Found 10 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:29:33.979] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:29:33.941Z
+[2025-04-16 11:29:33.979] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:29:34.010] [SUCCESS] [T02REG] Successfully pushed 10 records to T02REG. Last timestamp updated to: 2025-04-16T08:29:33.958Z
+[2025-04-16 11:29:34.010] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:29:43.919] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:29:43.920] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:29:43.961] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:29:43.961] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:29:43.978] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:29:43.978] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:29:43.980] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:29:33.941Z)
+[2025-04-16 11:29:43.981] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:29:43.979] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:29:43.984] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:29:33.958Z)
+[2025-04-16 11:29:43.984] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:29:43.999] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:29:43.957Z
+[2025-04-16 11:29:44.001] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:29:43.975Z
+[2025-04-16 11:29:43.999] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:29:44.001] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:29:53.920] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:29:53.920] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:29:53.958] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:29:53.975] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:29:53.958] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:29:53.975] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:29:53.987] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:29:53.988] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:29:43.957Z)
+[2025-04-16 11:29:53.989] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:29:53.991] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:29:43.975Z)
+[2025-04-16 11:29:53.992] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:29:54.004] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:29:53.954Z
+[2025-04-16 11:29:54.004] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:29:54.005] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:29:53.972Z
+[2025-04-16 11:29:54.006] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:03.926] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:30:03.925] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:30:03.961] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:30:03.961] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:30:03.976] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:30:03.976] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:30:04.001] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:30:04.002] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:29:53.954Z)
+[2025-04-16 11:30:04.003] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:30:04.006] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:29:53.972Z)
+[2025-04-16 11:30:04.006] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:30:04.018] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:30:03.973Z
+[2025-04-16 11:30:04.021] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:04.023] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:30:03.958Z
+[2025-04-16 11:30:04.023] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:30:13.928] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:30:13.929] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:30:13.960] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:30:13.959] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:30:14.027] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:30:14.028] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:30:14.029] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:30:14.030] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:30:14.029] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:30:03.958Z)
+[2025-04-16 11:30:14.034] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:30:03.973Z)
+[2025-04-16 11:30:14.036] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:30:14.065] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:30:14.020Z
+[2025-04-16 11:30:14.067] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:14.070] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:30:13.953Z
+[2025-04-16 11:30:14.070] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:30:23.939] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:30:23.940] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:30:23.977] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:30:23.994] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:30:23.977] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:30:23.994] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:30:24.034] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:30:24.035] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:30:13.953Z)
+[2025-04-16 11:30:24.036] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:30:24.037] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:30:14.020Z)
+[2025-04-16 11:30:24.038] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:30:24.050] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:30:23.990Z
+[2025-04-16 11:30:24.051] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:24.052] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:30:23.973Z
+[2025-04-16 11:30:24.052] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:30:33.951] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:30:33.989] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:30:34.006] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:30:33.989] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:30:33.952] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:30:34.007] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:30:34.047] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:30:34.048] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:30:23.973Z)
+[2025-04-16 11:30:34.049] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:30:34.050] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:30:23.990Z)
+[2025-04-16 11:30:34.050] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:30:34.082] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:30:33.985Z
+[2025-04-16 11:30:34.083] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG
+[2025-04-16 11:30:34.083] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:30:34.003Z
+[2025-04-16 11:30:34.084] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:43.954] [INFO] [GO_CNTR] [GENERATION] Starting scheduled generation: 5 records for each active TO...
+[2025-04-16 11:30:43.955] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T01REG...
+[2025-04-16 11:30:43.994] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T01REG.
+[2025-04-16 11:30:43.995] [INFO] [GO_CNTR] [GENERATION] Generating 5 records for T02REG...
+[2025-04-16 11:30:44.013] [INFO] [GO_CNTR] [GENERATION] Finished generating 5 records for T02REG.
+[2025-04-16 11:30:44.013] [INFO] [GO_CNTR] [GENERATION] Scheduled generation cycle complete.
+[2025-04-16 11:30:44.055] [INFO] [GO_CNTR] --- Starting new push cycle to TOs ---
+[2025-04-16 11:30:44.056] [INFO] [T01REG] Checking for new data to push to T01REG (since 2025-04-16T08:30:33.985Z)
+[2025-04-16 11:30:44.057] [REPLICA] [T01REG] Found 5 records to push to T01REG at http://localhost:3001/receive-data
+[2025-04-16 11:30:44.058] [INFO] [T02REG] Checking for new data to push to T02REG (since 2025-04-16T08:30:34.003Z)
+[2025-04-16 11:30:44.058] [REPLICA] [T02REG] Found 5 records to push to T02REG at http://localhost:3002/receive-data
+[2025-04-16 11:30:44.084] [SUCCESS] [T02REG] Successfully pushed 5 records to T02REG. Last timestamp updated to: 2025-04-16T08:30:44.010Z
+[2025-04-16 11:30:44.084] [INFO] [T02REG] Response from T02REG: Data received and processed by T02REG
+[2025-04-16 11:30:44.084] [SUCCESS] [T01REG] Successfully pushed 5 records to T01REG. Last timestamp updated to: 2025-04-16T08:30:43.991Z
+[2025-04-16 11:30:44.085] [INFO] [T01REG] Response from T01REG: Data received and processed by T01REG

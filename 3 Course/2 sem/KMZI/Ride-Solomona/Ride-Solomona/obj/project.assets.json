@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "ReedSolomon/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/ReedSolomon.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/ReedSolomon.dll": {}
+        }
+      },
+      "STH1123.ReedSolomon/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/ReedSolomon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/ReedSolomon.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReedSolomon/1.2.1": {
+      "sha512": "+nX4niXJtzYGIENsg1DNrQkD985LCPw6dpBLTzuHluO86WZwVWpzmxu/j9TinPNJ5Rpzyn9pqUt9lROfxGWC3Q==",
+      "type": "package",
+      "path": "reedsolomon/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net9.0/ReedSolomon.dll",
+        "reedsolomon.1.2.1.nupkg.sha512",
+        "reedsolomon.nuspec"
+      ]
+    },
+    "STH1123.ReedSolomon/2.1.0": {
+      "sha512": "XnpFWjT8eaZv3gq1SltwRx2p+SKtk/BLWXzbsQKPfPHYJlNMNHzZIxYx/70R+5pnvxMKaF0dISTgL5BRyKNP4Q==",
+      "type": "package",
+      "path": "sth1123.reedsolomon/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/ReedSolomon.dll",
+        "lib/net20/ReedSolomon.xml",
+        "lib/net40/ReedSolomon.dll",
+        "lib/net40/ReedSolomon.xml",
+        "lib/netstandard1.1/ReedSolomon.dll",
+        "lib/netstandard1.1/ReedSolomon.xml",
+        "sth1123.reedsolomon.2.1.0.nupkg.sha512",
+        "sth1123.reedsolomon.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "ReedSolomon >= 1.2.1",
+      "STH1123.ReedSolomon >= 2.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\University\\2sem\\KMZI\\Лабораторные\\Ride-Solomona\\Ride-Solomona\\Ride-Solomona.csproj",
+      "projectName": "Ride-Solomona",
+      "projectPath": "D:\\University\\2sem\\KMZI\\Лабораторные\\Ride-Solomona\\Ride-Solomona\\Ride-Solomona.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\University\\2sem\\KMZI\\Лабораторные\\Ride-Solomona\\Ride-Solomona\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "ReedSolomon": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
+          "STH1123.ReedSolomon": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

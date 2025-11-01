@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\1sem\\\u041F\u0421\u041F\\ServerU\\ClientS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41BEC752-5EB5-48BE-A9D9-A761E65E30BA}|ClientS\\ClientS.vcxproj|D:\\University\\1sem\\\u041F\u0421\u041F\\ServerU\\ClientS\\ClientS\\ClientS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{41BEC752-5EB5-48BE-A9D9-A761E65E30BA}|ClientS\\ClientS.vcxproj|solutionrelative:ClientS\\ClientS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientS.cpp",
+              "DocumentMoniker": "D:\\University\\1sem\\\u041F\u0421\u041F\\ServerU\\ClientS\\ClientS\\ClientS.cpp",
+              "RelativeDocumentMoniker": "ClientS\\ClientS.cpp",
+              "ToolTip": "D:\\University\\1sem\\\u041F\u0421\u041F\\ServerU\\ClientS\\ClientS\\ClientS.cpp",
+              "RelativeToolTip": "ClientS\\ClientS.cpp",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAANUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-20T07:07:03.34Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

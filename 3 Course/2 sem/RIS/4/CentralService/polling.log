@@ -1,0 +1,102 @@
+[2025-04-09 11:40:17.472] [INFO] Центральный сервис запускается...
+[2025-04-09 11:40:17.483] [INFO] Центральный сервис запущен на http://localhost:3000
+[2025-04-09 11:40:17.483] [INFO] Запуск цикла опроса каждые 5000 мс
+[2025-04-09 11:40:17.484] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:17.527] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:17.529] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:17.543] [ERROR] [TI_Service_01] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:17.544] [ERROR] [TI_Service_02] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:17.545] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:22.545] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:22.546] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:22.547] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:22.549] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:22.554] [ERROR] [TI_Service_01] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:22.556] [ERROR] [TI_Service_02] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:22.557] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:27.565] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:27.566] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:27.569] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:27.571] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:27.578] [ERROR] [TI_Service_01] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:27.579] [ERROR] [TI_Service_02] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:27.580] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:32.572] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:32.572] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:32.574] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:32.575] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:32.580] [ERROR] [TI_Service_02] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:32.580] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:32.599] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:40:32.587Z","measurementId":"m_1744188032588_1","value":"102.13","unit":"kW"}
+[2025-04-09 11:40:37.581] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:37.581] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:37.582] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:37.583] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:37.588] [ERROR] [TI_Service_02] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:37.589] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:37.592] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:40:37.591Z","measurementId":"m_1744188037591_2","value":"59.25","unit":"kW"}
+[2025-04-09 11:40:42.594] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:42.595] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:42.597] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:42.597] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:42.608] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:42.612] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:40:42.603Z","measurementId":"m_1744188042603_3","value":"135.69","unit":"kW"}
+[2025-04-09 11:40:42.619] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:40:42.611Z","measurementId":"m_1744188042613_195","value":"195.33","unit":"m3/h"}
+[2025-04-09 11:40:47.603] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:47.603] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:47.606] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:47.606] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:47.613] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:47.616] [ERROR] [TI_Service_01] Сервер ответил со статусом 500
+[2025-04-09 11:40:49.613] [WARN] [TI_Service_02] Таймаут запроса (2000ms)
+[2025-04-09 11:40:51.941] [INFO] Получен запрос на /status
+[2025-04-09 11:40:52.609] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:52.609] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:52.610] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:52.611] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:52.614] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:52.615] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:40:52.615Z","measurementId":"m_1744188052615_5","value":"116.96","unit":"kW"}
+[2025-04-09 11:40:52.619] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:40:52.619Z","measurementId":"m_1744188052619_194","value":"194.55","unit":"m3/h"}
+[2025-04-09 11:40:57.616] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:40:57.617] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:40:57.618] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:40:57.619] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:40:57.625] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:40:57.627] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:40:57.626Z","measurementId":"m_1744188057626_6","value":"99.64","unit":"kW"}
+[2025-04-09 11:40:57.629] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:40:57.628Z","measurementId":"m_1744188057628_198","value":"198.26","unit":"m3/h"}
+[2025-04-09 11:40:57.916] [INFO] Получен запрос на /status
+[2025-04-09 11:41:02.628] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:41:02.629] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:41:02.631] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:41:02.632] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:41:02.637] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:41:02.640] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:41:02.638Z","measurementId":"m_1744188062638_7","value":"140.62","unit":"kW"}
+[2025-04-09 11:41:02.641] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:41:02.640Z","measurementId":"m_1744188062640_201","value":"201.41","unit":"m3/h"}
+[2025-04-09 11:41:07.643] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:41:07.644] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:41:07.643] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:41:07.645] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:41:07.650] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:41:07.654] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:41:07.651Z","measurementId":"m_1744188067651_8","value":"90.46","unit":"kW"}
+[2025-04-09 11:41:07.655] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:41:07.654Z","measurementId":"m_1744188067654_204","value":"204.58","unit":"m3/h"}
+[2025-04-09 11:41:12.653] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:41:12.653] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:41:12.655] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:41:12.655] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:41:12.660] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:41:12.663] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:41:12.662Z","measurementId":"m_1744188072662_9","value":"97.51","unit":"kW"}
+[2025-04-09 11:41:12.665] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:41:12.664Z","measurementId":"m_1744188072664_208","value":"208.56","unit":"m3/h"}
+[2025-04-09 11:41:17.666] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:41:17.666] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:41:17.668] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:41:17.669] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:41:17.673] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:41:17.677] [ERROR] [TI_Service_01] Сервер ответил со статусом 500
+[2025-04-09 11:41:17.679] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:41:17.675Z","measurementId":"m_1744188077675_206","value":"206.38","unit":"m3/h"}
+[2025-04-09 11:41:22.667] [INFO] --- Начало нового цикла опроса ---
+[2025-04-09 11:41:22.668] [INFO] [TI_Service_01] Попытка опроса по адресу http://localhost:3001/data
+[2025-04-09 11:41:22.669] [INFO] [TI_Service_02] Попытка опроса по адресу http://localhost:3002/data
+[2025-04-09 11:41:22.670] [INFO] [TI_Service_NonExistent] Попытка опроса по адресу http://localhost:9999/data
+[2025-04-09 11:41:22.676] [ERROR] [TI_Service_NonExistent] Сервис недоступен (ECONNREFUSED)
+[2025-04-09 11:41:22.678] [SUCCESS] [TI_Service_01] Успешный опрос. Данные: {"sourceId":"TI_Service_01","timestamp":"2025-04-09T08:41:22.675Z","measurementId":"m_1744188082675_11","value":"110.62","unit":"kW"}
+[2025-04-09 11:41:22.679] [SUCCESS] [TI_Service_02] Успешный опрос. Данные: {"sourceId":"TI_Service_02","timestamp":"2025-04-09T08:41:22.677Z","measurementId":"m_1744188082677_208","value":"208.44","unit":"m3/h"}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f7fb;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      label {
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        color: white;
+        background-color: palevioletred;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      #status {
+        display: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f3f3f3;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <label for="idValue">ID</label>
+        <input type="number" id="idValue" placeholder="Введите ID" />
+      </div>
+      <div class="row">
+        <label for="nameValue">Name</label>
+        <input type="text" id="nameValue" placeholder="Введите имя" />
+      </div>
+      <div class="row">
+        <label for="bdayValue">BDay</label>
+        <input type="text" id="bdayValue" placeholder="Введите дату рождения" />
+      </div>
+
+      <button id="get">GET</button>
+      <button id="post">POST</button>
+      <button id="put">PUT</button>
+      <button id="delete">DELETE</button>
+
+      <div id="status"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      function showStatus(message, type = "success") {
+        $("#status")
+          .removeClass("error success")
+          .addClass(type)
+          .html(message)
+          .show();
+      }
+
+      $("#get").click(function () {
+        console.log("GET button pressed");
+        fetch("http://localhost:5000/api/db", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            showStatus(JSON.stringify(data));
+          })
+          .catch((err) => {
+            showStatus("Ошибка при запросе GET", "error");
+          });
+      });
+
+      $("#post").click(function () {
+        let inputId = document.getElementById("idValue");
+        let inputName = document.getElementById("nameValue");
+        let inputBDay = document.getElementById("bdayValue");
+        console.log("POST button pressed");
+
+        fetch("http://localhost:5000/api/db", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            id: inputId.value,
+            name: inputName.value,
+            bday: inputBDay.value,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            showStatus(JSON.stringify(data));
+          })
+          .catch((err) => {
+            showStatus("Ошибка при запросе POST", "error");
+          });
+      });
+
+      $("#put").click(function () {
+        let inputId = document.getElementById("idValue");
+        let inputName = document.getElementById("nameValue");
+        let inputBDay = document.getElementById("bdayValue");
+        console.log("PUT button pressed");
+
+        fetch("http://localhost:5000/api/db", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            id: inputId.value,
+            name: inputName.value,
+            bday: inputBDay.value,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            showStatus(JSON.stringify(data));
+          })
+          .catch((err) => {
+            showStatus("Ошибка при запросе PUT", "error");
+          });
+      });
+
+      $("#delete").click(function () {
+        let inputId = document.getElementById("idValue");
+        console.log("DELETE button pressed");
+
+        fetch(`http://localhost:5000/api/db?id=${inputId.value}`, {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            showStatus(JSON.stringify(data));
+          })
+          .catch((err) => {
+            showStatus("Ошибка при запросе DELETE", "error");
+          });
+      });
+    </script>
+  </body>
+</html>

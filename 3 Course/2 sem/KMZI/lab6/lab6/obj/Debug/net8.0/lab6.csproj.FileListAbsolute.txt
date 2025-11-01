@@ -1,0 +1,14 @@
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\bin\Debug\net8.0\lab6.exe
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\bin\Debug\net8.0\lab6.deps.json
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\bin\Debug\net8.0\lab6.runtimeconfig.json
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\bin\Debug\net8.0\lab6.dll
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\bin\Debug\net8.0\lab6.pdb
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.AssemblyInfoInputs.cache
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.AssemblyInfo.cs
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.csproj.CoreCompileInputs.cache
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.dll
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\refint\lab6.dll
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.pdb
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\lab6.genruntimeconfig.cache
+D:\University\2sem\KMZI\Лабораторные\lab6\lab6\obj\Debug\net8.0\ref\lab6.dll

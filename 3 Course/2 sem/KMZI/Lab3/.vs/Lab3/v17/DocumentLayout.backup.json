@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2F6EFB-9EAF-4DC8-BBF2-D9B5784787DC}|Lab3\\Lab3.csproj|d:\\university\\2sem\\kmzi\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\lab3\\lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2F6EFB-9EAF-4DC8-BBF2-D9B5784787DC}|Lab3\\Lab3.csproj|solutionrelative:lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab3\\Lab3\\Program.cs",
+              "RelativeDocumentMoniker": "Lab3\\Program.cs",
+              "ToolTip": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab3\\Lab3\\Program.cs",
+              "RelativeToolTip": "Lab3\\Program.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAswLkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T19:06:07.139Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

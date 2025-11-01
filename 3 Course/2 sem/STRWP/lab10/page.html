@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSocket Test 10-01 (Numbered Instances)</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      #messages {
+        height: 400px;
+        width: 600px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #f9f9f9;
+      }
+      .message {
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 3px;
+      }
+
+      .client {
+        color: blue;
+        background-color: #e0e0ff;
+        text-align: right;
+      }
+      .server {
+        color: green;
+        background-color: #e0ffe0;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+      }
+      .info {
+        color: gray;
+        font-style: italic;
+      }
+      button {
+        padding: 10px 15px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WebSocket Test 10-01 (Numbered Instances)</h1>
+    <button id="startButton">startWS</button>
+    <div id="messages"></div>
+
+    <script>
+      const startButton = document.getElementById("startButton");
+      const messagesDiv = document.getElementById("messages");
+
+      let instanceCounter = 0;
+
+      function logMessage(instanceId, message, type = "info") {
+        const prefix = `[Inst-${instanceId}]`;
+        console.log(`${prefix} [${type.toUpperCase()}] ${message}`);
+
+        const p = document.createElement("p");
+        let instanceClass = `instance-${instanceId}`;
+        if (instanceId > 5) instanceClass = "instance-other";
+
+        p.className = `message ${type} ${instanceClass}`;
+        p.textContent = `${prefix} ${message}`;
+        messagesDiv.appendChild(p);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+      }
+
+      function startWS() {
+        instanceCounter++;
+        const currentInstanceId = instanceCounter;
+
+        let currentWs = null;
+        let currentClientInterval = null;
+        let currentStopTimeout = null;
+        let currentClientMessageCounter = 0; //  счетчик сообщений для экземпляра
+
+        logMessage(
+          currentInstanceId,
+          `-> Button Clicked! Attempting connection...`,
+          "info"
+        );
+
+        currentWs = new WebSocket("ws://localhost:4000");
+
+        currentWs.onopen = () => {
+          logMessage(currentInstanceId, `Connection Established`, "info");
+
+          currentClientInterval = setInterval(() => {
+            currentClientMessageCounter++; // Увеличиваем локальный счетчик
+            const messageToServer = `10-01-client: ${currentClientMessageCounter}`;
+            if (currentWs.readyState === WebSocket.OPEN) {
+              currentWs.send(messageToServer);
+              logMessage(
+                currentInstanceId,
+                `Sent: ${messageToServer}`,
+                "client"
+              );
+            } else {
+              logMessage(
+                currentInstanceId,
+                `Cannot send, WS not open. Stopping interval.`,
+                "error"
+              );
+              if (currentClientInterval) clearInterval(currentClientInterval);
+              if (currentStopTimeout) clearTimeout(currentStopTimeout);
+            }
+          }, 3000);
+
+          currentStopTimeout = setTimeout(() => {
+            logMessage(currentInstanceId, `Auto-stopping after 25s.`, "info");
+            if (currentClientInterval) clearInterval(currentClientInterval);
+            if (currentWs && currentWs.readyState === WebSocket.OPEN) {
+              logMessage(currentInstanceId, `Closing connection...`, "info");
+              currentWs.close(
+                1000,
+                `[Inst-${currentInstanceId}] Auto-stopped after 25s`
+              );
+            }
+          }, 25000);
+        };
+
+        currentWs.onmessage = (event) => {
+          logMessage(currentInstanceId, `Received: ${event.data}`, "server");
+        };
+
+        currentWs.onclose = (event) => {
+          const reason = event.reason ? `, Reason: ${event.reason}` : "";
+          logMessage(
+            currentInstanceId,
+            `Connection Closed. Code: ${event.code}${reason}`,
+            event.code === 1000 ? "info" : "error"
+          );
+          if (currentClientInterval) clearInterval(currentClientInterval);
+          if (currentStopTimeout) clearTimeout(currentStopTimeout);
+        };
+
+        currentWs.onerror = (error) => {
+          logMessage(
+            currentInstanceId,
+            `Error Occurred. See console.`,
+            "error"
+          );
+          console.error(`[Inst-${currentInstanceId}] WebSocket Error:`, error);
+        };
+      }
+
+      startButton.addEventListener("click", startWS);
+    </script>
+  </body>
+</html>

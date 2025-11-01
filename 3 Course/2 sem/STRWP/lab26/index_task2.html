@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WASM Demo - Task 2 (emcc & Server)</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      .container {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 80px;
+      }
+      input[type="number"] {
+        padding: 5px;
+        width: 100px;
+      }
+      button {
+        padding: 8px 15px;
+        margin-top: 10px;
+      }
+      p {
+        background-color: #f0f0f0;
+        padding: 8px;
+        border-radius: 3px;
+      }
+      p span {
+        font-weight: bold;
+      }
+      #status_task2 {
+        font-style: italic;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>WASM Calculator (Task 2 - emcc, Fetched from Server)</h1>
+      <p id="status_task2">Загрузка WASM с сервера...</p>
+
+      <div>
+        <label for="num1_task2">Число 1:</label>
+        <input type="number" id="num1_task2" value="20" />
+      </div>
+      <div>
+        <label for="num2_task2">Число 2:</label>
+        <input type="number" id="num2_task2" value="7" />
+      </div>
+
+      <button onclick="calculate_task2()">Вычислить</button>
+
+      <h2>Результаты:</h2>
+      <p>Sum (x + y): <span id="sumResult_task2">N/A</span></p>
+      <p>Multiply (x * y): <span id="mulResult_task2">N/A</span></p>
+      <p>Subtract (x - y): <span id="subResult_task2">N/A</span></p>
+    </div>
+
+    <script>
+      let wasmExports_task2;
+      const statusEl_task2 = document.getElementById("status_task2");
+
+      async function loadWasmFromServer_task2() {
+        try {
+          const response = await fetch("/my_functions.wasm");
+          if (!response.ok) {
+            throw new Error(
+              `HTTP ошибка! Статус: ${response.status} при загрузке my_functions.wasm`
+            );
+          }
+          const wasmBuffer = await response.arrayBuffer();
+          const wasmModule = await WebAssembly.compile(wasmBuffer);
+          const instance = await WebAssembly.instantiate(wasmModule, {});
+          wasmExports_task2 = instance.exports;
+
+          statusEl_task2.textContent =
+            "WASM модуль (my_functions.wasm) успешно загружен с сервера!";
+          console.log(
+            "WASM module (Task 2) loaded. Exports:",
+            wasmExports_task2
+          );
+
+          if (
+            wasmExports_task2.sum &&
+            wasmExports_task2.mul &&
+            wasmExports_task2.sub
+          ) {
+            alert(
+              "WASM модуль (my_functions.wasm) успешно загружен с сервера! Можно вычислять."
+            );
+          } else {
+            const errMsg =
+              "Ошибка: Не удалось найти _sum, _mul, _sub в WASM модуле. Проверьте команду компиляции emcc и флаг EXPORTED_FUNCTIONS.";
+            statusEl_task2.textContent = errMsg;
+            alert(errMsg);
+            console.error(errMsg, "Доступные экспорты:", wasmExports_task2);
+          }
+        } catch (error) {
+          console.error("Ошибка загрузки WASM (Task 2):", error);
+          statusEl_task2.textContent =
+            "Ошибка загрузки WASM с сервера: " + error.message;
+          alert("Ошибка загрузки WASM с сервера: " + error.message);
+        }
+      }
+
+      function calculate_task2() {
+        if (!wasmExports_task2) {
+          alert(
+            "WASM модуль еще не загружен. Пожалуйста, подождите или проверьте консоль."
+          );
+          return;
+        }
+
+        const num1 = parseInt(document.getElementById("num1_task2").value);
+        const num2 = parseInt(document.getElementById("num2_task2").value);
+
+        if (isNaN(num1) || isNaN(num2)) {
+          alert("Пожалуйста, введите корректные числа.");
+          return;
+        }
+
+        try {
+          document.getElementById("sumResult_task2").textContent =
+            wasmExports_task2.sum(num1, num2);
+          document.getElementById("mulResult_task2").textContent =
+            wasmExports_task2.mul(num1, num2);
+          document.getElementById("subResult_task2").textContent =
+            wasmExports_task2.sub(num1, num2);
+        } catch (e) {
+          const errMsg =
+            "Ошибка при вызове WASM функции (Task 2): " + e.message;
+          statusEl_task2.textContent = errMsg;
+          alert(errMsg);
+          console.error(errMsg, "Доступные экспорты:", wasmExports_task2);
+        }
+      }
+
+      window.onload = loadWasmFromServer_task2;
+    </script>
+  </body>
+</html>

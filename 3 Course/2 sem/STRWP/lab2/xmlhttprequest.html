@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>ФИО студента:</h1>
+    <p id="name">Загрузка...</p>
+
+    <script>
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", "/api/name", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById("name").textContent = xhr.responseText;
+        }
+      };
+      xhr.send();
+    </script>
+  </body>
+</html>

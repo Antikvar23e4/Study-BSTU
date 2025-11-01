@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E4C90B8-0851-4C6D-BF4C-9BECF6D20A8E}|Lab4\\Lab4.csproj|d:\\university\\2sem\\kmzi\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\lab4\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E4C90B8-0851-4C6D-BF4C-9BECF6D20A8E}|Lab4\\Lab4.csproj|solutionrelative:lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab4\\Lab4\\Program.cs",
+              "RelativeDocumentMoniker": "Lab4\\Program.cs",
+              "ToolTip": "D:\\University\\2sem\\KMZI\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0435\\Lab4\\Lab4\\Program.cs",
+              "RelativeToolTip": "Lab4\\Program.cs",
+              "ViewState": "AgIAAJoBAAAAAAAAAAAgwNMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T08:03:36.978Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

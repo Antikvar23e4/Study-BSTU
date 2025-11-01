@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Ride-Solomona/1.0.0": {
+        "dependencies": {
+          "ReedSolomon": "1.2.1",
+          "STH1123.ReedSolomon": "2.1.0"
+        },
+        "runtime": {
+          "Ride-Solomona.dll": {}
+        }
+      },
+      "ReedSolomon/1.2.1": {},
+      "STH1123.ReedSolomon/2.1.0": {
+        "runtime": {
+          "lib/netstandard1.1/ReedSolomon.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ride-Solomona/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReedSolomon/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+nX4niXJtzYGIENsg1DNrQkD985LCPw6dpBLTzuHluO86WZwVWpzmxu/j9TinPNJ5Rpzyn9pqUt9lROfxGWC3Q==",
+      "path": "reedsolomon/1.2.1",
+      "hashPath": "reedsolomon.1.2.1.nupkg.sha512"
+    },
+    "STH1123.ReedSolomon/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XnpFWjT8eaZv3gq1SltwRx2p+SKtk/BLWXzbsQKPfPHYJlNMNHzZIxYx/70R+5pnvxMKaF0dISTgL5BRyKNP4Q==",
+      "path": "sth1123.reedsolomon/2.1.0",
+      "hashPath": "sth1123.reedsolomon.2.1.0.nupkg.sha512"
+    }
+  }
+}

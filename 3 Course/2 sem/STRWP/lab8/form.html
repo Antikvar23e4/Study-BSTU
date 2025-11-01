@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тест формы</title>
+  </head>
+  <body>
+    <h1>Отправка данных формы на /formparameter</h1>
+    <form action="/formparameter" method="POST">
+      <p>
+        <label
+          >Текстовое поле (text):
+          <input type="text" name="text_field" value="Какой-то текст"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Числовое поле (number):
+          <input type="number" name="number_field" value="123"
+        /></label>
+      </p>
+      <p>
+        <label>Дата (date): <input type="date" name="date_field" /></label>
+      </p>
+      <p>
+        Чекбоксы (checkbox):
+        <label
+          ><input
+            type="checkbox"
+            name="checkbox_field"
+            value="Значение 1"
+            checked
+          />
+          Опция 1</label
+        >
+        <label
+          ><input type="checkbox" name="checkbox_field" value="Значение 2" />
+          Опция 2</label
+        >
+        <label
+          ><input type="checkbox" name="checkbox_field" value="Значение 3" />
+          Опция 3</label
+        >
+      </p>
+      <p>
+        Радиокнопки (radiobutton):
+        <label
+          ><input type="radio" name="radio_field" value="Радио A" checked />
+          Выбор A</label
+        >
+        <label
+          ><input type="radio" name="radio_field" value="Радио B" /> Выбор
+          B</label
+        >
+      </p>
+      <p>
+        <label
+          >Текстовая область (textarea):<br />
+          <textarea name="textarea_field" rows="4" cols="50">
+Текст по умолчанию в несколько строк.</textarea
+          >
+        </label>
+      </p>
+      <p>
+        Кнопки Submit:<br />
+        <input
+          type="submit"
+          name="submit_button"
+          value="Отправить с Кнопки 1"
+        />
+        <input
+          type="submit"
+          name="submit_button"
+          value="Отправить с Кнопки 2"
+        />
+      </p>
+    </form>
+  </body>
+</html>

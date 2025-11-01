@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>ФИО студента:</h1>
+    <p id="name">Загрузка...</p>
+
+    <script>
+      $.ajax({
+        url: "/api/name",
+        method: "GET",
+        success: function (data) {
+          $("#name").text(data);
+        },
+        error: function () {
+          $("#name").text("Ошибка загрузки данных");
+        },
+      });
+    </script>
+  </body>
+</html>

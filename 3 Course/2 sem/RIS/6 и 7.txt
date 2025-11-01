@@ -1,0 +1,23 @@
+Для 6
+централ
+node c_server.js 
+1локальн
+
+node server.js
+2локальн 
+node server.js 
+
+
+Для 7 
+netsh interface ipv4 add address name="Loopback Pseudo-Interface 1" 192.168.1.100 255.255.255.0
+netsh interface ipv4 add address name="Loopback Pseudo-Interface 1" 192.168.1.101 255.255.255.0
+netsh interface ipv4 add address name="Loopback Pseudo-Interface 1" 192.168.1.102 255.255.255.0
+netsh interface ipv4 add address name="Loopback Pseudo-Interface 1" 192.168.1.103 255.255.255.0
+
+node svv_node.js 192.168.1.101
+node svv_node.js 192.168.1.102
+node svv_node.js 192.168.1.103
+
+node proxy.js 192.168.1.100
+
+node client.js 192.168.1.100 127.0.0.1
